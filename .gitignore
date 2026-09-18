@@ -1,0 +1,41 @@
+# deps
+node_modules/
+.pnp/
+.pnp.js
+
+# build output
+dist/
+build/
+.vite/
+*.tsbuildinfo
+
+# env — no secret ever reaches a bundle (AA-01 §1.8)
+.env
+.env.*
+!.env.example
+!env.example
+
+# test / coverage
+coverage/
+.nyc_output/
+playwright-report/
+test-results/
+
+# logs
+*.log
+npm-debug.log*
+pnpm-debug.log*
+yarn-error.log*
+
+# editors / os
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# prisma local
+api/prisma/*.db
+api/prisma/*.db-journal
+
+# npm auth
+.npmrc

@@ -1,0 +1,13 @@
+# AA-01 §1.10 step 5. Reviews: BE-1 reviews BE-2 and the reverse, FE-1 reviews FE-2 and
+# the reverse. Kit changes need both front-end reviews.
+# Replace the placeholders with GitHub handles before enabling branch protection.
+
+# * @fe-1 @fe-2 @be-1 @be-2
+
+# a change to how a portal talks to the api cannot be self-merged by one person
+# /admin-portal/src/api/     @be-1
+# /supplier-portal/src/api/  @be-1
+# /fleet-portal/src/api/     @be-1
+# /.github/workflows/        @be-1
+
+# /portal-kit/               @fe-1 @fe-2
