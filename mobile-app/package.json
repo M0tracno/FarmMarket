@@ -1,0 +1,41 @@
+{
+  "name": "mobile-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "expo-router/entry",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "expo start",
+    "android": "expo run:android",
+    "ios": "expo run:ios",
+    "typecheck": "tsc --noEmit"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devEngines": {
+    "packageManager": {
+      "name": "pnpm",
+      "version": "^11.12.0",
+      "onFail": "download"
+    }
+  },
+  "dependencies": {
+    "@expo-google-fonts/manrope": "^0.4.2",
+    "@expo/vector-icons": "^15.1.1",
+    "babel-preset-expo": "~57.0.12",
+    "expo": "^57.0.24",
+    "expo-font": "~57.0.4",
+    "expo-router": "~57.0.22",
+    "expo-splash-screen": "~57.0.9",
+    "react": "19.2.3",
+    "react-dom": "19.2.3",
+    "react-native": "0.86.3",
+    "react-native-web": "^0.21.2"
+  },
+  "devDependencies": {
+    "@react-native/typescript-config": "^0.87.1",
+    "@types/react": "^19.2.18",
+    "typescript": "^6.0.3"
+  }
+}
