@@ -1,4 +1,10 @@
-# Specification set
+# Documentation
+
+[`WHERE-TO-WORK.md`](WHERE-TO-WORK.md) — which directory a given task belongs in, who
+starts where in week 1, and the full screen inventory per portal. Written for this tree;
+everything else here is the programme specification.
+
+## Specification set
 
 Thirteen documents, `AA-00` to `AA-12`, rev 1.0 baseline, 30 August 2026. `AA-00` is the
 root: if a later document contradicts it, the later document is wrong and `AA-00` is

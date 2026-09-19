@@ -7,6 +7,9 @@ with a Crop Advisor service.
 The full specification is thirteen documents in [`docs/`](docs/). `AA-00` is the root:
 if any other document contradicts it, that document is wrong.
 
+**New here, or unsure which directory your task belongs in?**
+Read [`docs/WHERE-TO-WORK.md`](docs/WHERE-TO-WORK.md) first.
+
 ## Layout
 
 The specification (AA-01 §1.1) calls for **five separate repositories**. They are laid
@@ -20,6 +23,10 @@ later, each directory lifts out unchanged.
 | `admin-portal/` | `atavishaala-admin-portal` | Vite, React 18, TanStack Query, Router 6 | Cloudflare Pages → `admin.atavishaala.in` |
 | `supplier-portal/` | `atavishaala-supplier-portal` | same | Cloudflare Pages → `seller.atavishaala.in` |
 | `fleet-portal/` | `atavishaala-fleet-portal` | same | Cloudflare Pages → `fleet.atavishaala.in` |
+
+`mobile-app/` holds the existing React Native consumer app — the one farmers use. It is
+listed in AA-00 as unchanged by this programme, carries no task in AA-11, and consumes
+the frozen `/api/v1/app` surface. It is not one of the five repositories.
 
 `docs/` holds the specification PDFs. `.github/workflows/` holds CI (twelve gates, AA-01 §1.7).
 
