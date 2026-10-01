@@ -6,6 +6,10 @@ export const COLORS = {
   secondary: '#A67C52',
   orange: '#C47A44',
 
+  cropAdvisor: '#6A00FF',
+  cropAdvisorBackground: '#F8F3FF',
+  cropAdvisorBorder: '#E3C8FF',
+
   text: {
     primary: '#1A1A1A',
     secondary: '#666666',
