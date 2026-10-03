@@ -27,3 +27,7 @@ export const HOME_CATEGORIES: HomeCategory[] = [
     image: require('../../assets/images/categories/farming-tools.png'),
   },
 ];
+export const HOME_HEADER_DATA = {
+  location: 'Kolar, Karnataka',
+  walletBalance: 500,
+} as const;

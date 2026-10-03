@@ -2,9 +2,8 @@ import React, { useState } from 'react';
 import { SafeAreaView, ScrollView, StyleSheet } from 'react-native';
 
 import { CategorySection, HomeHeader, HomeSearchBar } from '@/components';
-import { HOME_CATEGORIES } from '@/constants/home';
 import { COLORS, SPACING } from '@/theme';
-
+import { HOME_CATEGORIES, HOME_HEADER_DATA } from '@/constants/home';
 export function HomeScreen() {
   const [searchQuery, setSearchQuery] = useState('');
 
@@ -15,9 +14,12 @@ export function HomeScreen() {
         contentContainerStyle={styles.content}
       >
         <HomeHeader
-          location="Hyderabad"
+          location={HOME_HEADER_DATA.location}
+          walletBalance={HOME_HEADER_DATA.walletBalance}
+          onLocationPress={() => {}}
           onNotificationPress={() => {}}
-          onProfilePress={() => {}}
+          onWalletPress={() => {}}
+          onCartPress={() => {}}
         />
 
         <HomeSearchBar

@@ -64,6 +64,13 @@ export function useResponsive() {
     categoryCardRadius: isSmall ? RADIUS.md : RADIUS.lg,
 
     sectionSpacing: isSmall ? SPACING.xl : SPACING.xxl,
+    walletHeight: isSmall ? 24 : 28,
+    walletWidth: isSmall ? 46 : 50,
+    walletHorizontalPadding: isSmall ? 6 : 8,
+    walletRadius: isSmall ? 4 : 6,
+    walletGap: isSmall ? 2 : 4,
+    walletFontSize: isSmall ? 12 : 13,
+    walletLineHeight: isSmall ? 16 : 18,
   };
 
   return {

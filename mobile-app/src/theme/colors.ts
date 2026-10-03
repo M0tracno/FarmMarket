@@ -13,7 +13,7 @@ export const COLORS = {
     inverse: '#FFFFFF',
   },
 
-  border: '#E5E5E5',
+  border: '#A491BF',
   divider: '#EEEEEE',
 
   success: '#2E7D32',
