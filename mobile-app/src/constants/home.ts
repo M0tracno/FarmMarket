@@ -6,11 +6,7 @@ export const HOME_CATEGORIES: HomeCategory[] = [
     name: 'Seeds',
     image: require('../../assets/images/categories/seeds.png'),
   },
-  {
-    id: 'fertilizers',
-    name: 'Fertilizers',
-    image: require('../../assets/images/categories/fertilizers.png'),
-  },
+
   {
     id: 'pesticides',
     name: 'Pesticides',
@@ -20,6 +16,11 @@ export const HOME_CATEGORIES: HomeCategory[] = [
     id: 'fungicides',
     name: 'Fungicides',
     image: require('../../assets/images/categories/fungicides.png'),
+  },
+  {
+    id: 'fertilizers',
+    name: 'Fertilizers',
+    image: require('../../assets/images/categories/fertilizers.png'),
   },
   {
     id: 'farming-tools',

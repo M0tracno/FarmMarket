@@ -5,7 +5,7 @@ export const COLORS = {
   primary: '#8B5E3C',
   secondary: '#A67C52',
   orange: '#C47A44',
-
+  categoryBackground: '#E9EBF8',
   text: {
     primary: '#1A1A1A',
     secondary: '#666666',
@@ -19,7 +19,7 @@ export const COLORS = {
   success: '#2E7D32',
   warning: '#F59E0B',
   error: '#D32F2F',
-  info: '#2563EB',
+  info: '#6A00FF',
 
   disabled: '#D9D9D9',
 

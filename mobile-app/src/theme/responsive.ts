@@ -48,23 +48,34 @@ export function useResponsive() {
     locationLineHeight: isSmall ? LINE_HEIGHT.sm : LINE_HEIGHT.md,
 
     headerActionSize: isSmall ? 40 : 44,
+
     searchFontSize: isSmall ? 12 : 13,
+
     searchLineHeight: isSmall ? 16 : 18,
+
     searchHeight: isSmall ? 40 : 42,
 
     searchRadius: isSmall ? RADIUS.sm : RADIUS.md,
 
     searchHorizontalPadding: isSmall ? SPACING.sm : SPACING.md,
 
-    categoryGap: isSmall ? SPACING.sm : SPACING.md,
+    // Category section
+    categoryGap: isSmall ? 2 : 4,
 
-    categoryImageSize: isSmall ? 64 : 72,
+    categoryImageSize: isSmall ? 66 : 68,
 
-    categoryCardWidth: isSmall ? 76 : 84,
+    categoryImageContainerSize: isSmall ? 76 : 84,
 
-    categoryCardRadius: isSmall ? RADIUS.md : RADIUS.lg,
+    categoryCardWidth: isSmall ? 92 : 104,
+
+    categoryCardRadius: RADIUS.xs,
+
+    categoryFontSize: isSmall ? FONT_SIZE.sm : FONT_SIZE.sm,
+
+    categoryLineHeight: isSmall ? LINE_HEIGHT.sm : LINE_HEIGHT.sm,
 
     sectionSpacing: isSmall ? SPACING.xl : SPACING.xxl,
+
     walletHeight: isSmall ? 24 : 28,
     walletWidth: isSmall ? 46 : 50,
     walletHorizontalPadding: isSmall ? 6 : 8,
