@@ -1,18 +1,49 @@
-import React from 'react';
-import { StyleSheet, View } from 'react-native';
+import React, { useState } from 'react';
+import { SafeAreaView, ScrollView, StyleSheet } from 'react-native';
 
-import { AppText } from '@/components';
+import { CategorySection, HomeHeader, HomeSearchBar } from '@/components';
+import { HOME_CATEGORIES } from '@/constants/home';
+import { COLORS, SPACING } from '@/theme';
 
 export function HomeScreen() {
+  const [searchQuery, setSearchQuery] = useState('');
+
   return (
-    <View style={styles.container}>
-      <AppText variant="title">Home</AppText>
-    </View>
+    <SafeAreaView style={styles.container}>
+      <ScrollView
+        showsVerticalScrollIndicator={false}
+        contentContainerStyle={styles.content}
+      >
+        <HomeHeader
+          location="Hyderabad"
+          onNotificationPress={() => {}}
+          onProfilePress={() => {}}
+        />
+
+        <HomeSearchBar
+          value={searchQuery}
+          onChangeText={setSearchQuery}
+          onVoicePress={() => {}}
+          onScanPress={() => {}}
+        />
+
+        <CategorySection
+          title="Shop by Category"
+          categories={HOME_CATEGORIES}
+          onCategoryPress={() => {}}
+        />
+      </ScrollView>
+    </SafeAreaView>
   );
 }
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
+    backgroundColor: COLORS.background,
+  },
+
+  content: {
+    paddingBottom: SPACING.xxxl,
   },
 });
