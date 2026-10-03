@@ -24,6 +24,9 @@ export const ICONS = {
   location: 'location-outline',
   notifications: 'notifications-outline',
   wallet: 'wallet-outline',
+  microphone: 'mic-outline',
+  scan: 'scan-outline',
+  wishlist: 'heart-outline',
   settings: 'settings-outline',
   eye: 'eye-outline',
   eyeOff: 'eye-off-outline',
@@ -40,6 +43,10 @@ export const CUSTOM_ICONS: Partial<
   location: require('../../assets/icons/location.png'),
   notifications: require('../../assets/icons/notification.png'),
   wallet: require('../../assets/icons/wallet.png'),
+  scan: require('../../assets/icons/scan.png'),
+  search: require('../../assets/icons/search.png'),
+  microphone: require('../../assets/icons/microphone.png'),
+  wishlist: require('../../assets/icons/wishlist.png'),
 };
 
 export type IconName = keyof typeof ICONS;

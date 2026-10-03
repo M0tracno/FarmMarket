@@ -48,10 +48,11 @@ export function useResponsive() {
     locationLineHeight: isSmall ? LINE_HEIGHT.sm : LINE_HEIGHT.md,
 
     headerActionSize: isSmall ? 40 : 44,
+    searchFontSize: isSmall ? 12 : 13,
+    searchLineHeight: isSmall ? 16 : 18,
+    searchHeight: isSmall ? 40 : 42,
 
-    searchHeight: isSmall ? 44 : 48,
-
-    searchRadius: isSmall ? RADIUS.lg : RADIUS.xl,
+    searchRadius: isSmall ? RADIUS.sm : RADIUS.md,
 
     searchHorizontalPadding: isSmall ? SPACING.sm : SPACING.md,
 
