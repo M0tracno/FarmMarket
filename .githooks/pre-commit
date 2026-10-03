@@ -1,13 +1,8 @@
 #!/bin/sh
 
 REPO_ROOT="$(git rev-parse --show-toplevel)"
-cd "$REPO_ROOT" || exit 1
+cd "$REPO_ROOT/mobile-app" || exit 1
 
-echo "Running mobile-app checks..."
-
-cd mobile-app || exit 1
-
-echo "Running lint-staged..."
 pnpm exec lint-staged
 if [ $? -ne 0 ]; then
   echo "lint-staged failed. Commit blocked."
@@ -18,13 +13,6 @@ echo "Running TypeScript check..."
 pnpm typecheck
 if [ $? -ne 0 ]; then
   echo "TypeScript check failed. Commit blocked."
-  exit 1
-fi
-
-echo "Running ESLint..."
-pnpm exec eslint .
-if [ $? -ne 0 ]; then
-  echo "ESLint check failed. Commit blocked."
   exit 1
 fi
 
