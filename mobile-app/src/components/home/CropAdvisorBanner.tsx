@@ -18,6 +18,7 @@ export function CropAdvisorBanner({ onPress }: CropAdvisorBannerProps) {
         {
           height: home.cropAdvisorHeight,
           marginHorizontal: home.headerHorizontalPadding,
+          marginTop: home.cropAdvisorMarginTop,
           borderRadius: home.cropAdvisorRadius,
         },
       ]}
@@ -95,10 +96,9 @@ const styles = StyleSheet.create({
     position: 'relative',
     overflow: 'hidden',
   },
-
   image: {
     width: '100%',
-    height: '100%',
+    height: '78%',
   },
 
   content: {
@@ -111,6 +111,7 @@ const styles = StyleSheet.create({
   title: {
     color: COLORS.text.primary,
     fontWeight: '600',
+    marginTop: SPACING.xl,
   },
 
   description: {
@@ -125,7 +126,7 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     backgroundColor: COLORS.info,
     paddingHorizontal: SPACING.md,
-    marginTop: SPACING.md,
+    marginTop: SPACING.xl,
   },
 
   buttonText: {

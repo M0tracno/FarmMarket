@@ -76,9 +76,11 @@ export function useResponsive() {
 
     sectionSpacing: isSmall ? SPACING.xl : SPACING.xxl,
     // Crop Advisor banner
-    cropAdvisorHeight: isSmall ? 158 : 208,
+    cropAdvisorMarginTop: SPACING.xs,
 
-    cropAdvisorRadius: RADIUS.md,
+    cropAdvisorHeight: ((width - horizontalPadding * 2) * 387) / 606,
+
+    cropAdvisorRadius: RADIUS.lg,
 
     cropAdvisorTitleSize: isSmall ? FONT_SIZE.md : FONT_SIZE.lg,
 
@@ -90,7 +92,7 @@ export function useResponsive() {
 
     cropAdvisorButtonHeight: isSmall ? 30 : 32,
 
-    cropAdvisorButtonRadius: RADIUS.xs,
+    cropAdvisorButtonRadius: RADIUS.sm,
 
     cropAdvisorButtonFontSize: isSmall ? 12 : 13,
 
