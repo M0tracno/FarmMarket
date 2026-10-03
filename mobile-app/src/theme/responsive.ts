@@ -75,7 +75,26 @@ export function useResponsive() {
     categoryLineHeight: isSmall ? LINE_HEIGHT.sm : LINE_HEIGHT.sm,
 
     sectionSpacing: isSmall ? SPACING.xl : SPACING.xxl,
+    // Crop Advisor banner
+    cropAdvisorHeight: isSmall ? 158 : 208,
 
+    cropAdvisorRadius: RADIUS.md,
+
+    cropAdvisorTitleSize: isSmall ? FONT_SIZE.md : FONT_SIZE.lg,
+
+    cropAdvisorTitleLineHeight: isSmall ? LINE_HEIGHT.md : LINE_HEIGHT.lg,
+
+    cropAdvisorDescriptionSize: isSmall ? 9 : 10,
+
+    cropAdvisorDescriptionLineHeight: isSmall ? 12 : 14,
+
+    cropAdvisorButtonHeight: isSmall ? 30 : 32,
+
+    cropAdvisorButtonRadius: RADIUS.xs,
+
+    cropAdvisorButtonFontSize: isSmall ? 12 : 13,
+
+    cropAdvisorButtonLineHeight: isSmall ? 16 : 18,
     walletHeight: isSmall ? 24 : 28,
     walletWidth: isSmall ? 46 : 50,
     walletHorizontalPadding: isSmall ? 6 : 8,

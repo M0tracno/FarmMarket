@@ -1,9 +1,16 @@
 import React, { useState } from 'react';
 import { SafeAreaView, ScrollView, StyleSheet } from 'react-native';
 
-import { CategorySection, HomeHeader, HomeSearchBar } from '@/components';
-import { COLORS, SPACING } from '@/theme';
+import {
+  CategorySection,
+  CropAdvisorBanner,
+  HomeHeader,
+  HomeSearchBar,
+} from '@/components';
+
 import { HOME_CATEGORIES, HOME_HEADER_DATA } from '@/constants/home';
+import { COLORS, SPACING } from '@/theme';
+
 export function HomeScreen() {
   const [searchQuery, setSearchQuery] = useState('');
 
@@ -32,8 +39,9 @@ export function HomeScreen() {
         <CategorySection
           title="Shop by Category"
           categories={HOME_CATEGORIES}
-          onCategoryPress={() => {}}
         />
+
+        <CropAdvisorBanner />
       </ScrollView>
     </SafeAreaView>
   );
