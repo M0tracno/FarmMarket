@@ -6,11 +6,7 @@ export const HOME_CATEGORIES: HomeCategory[] = [
     name: 'Seeds',
     image: require('../../assets/images/categories/seeds.png'),
   },
-  {
-    id: 'fertilizers',
-    name: 'Fertilizers',
-    image: require('../../assets/images/categories/fertilizers.png'),
-  },
+
   {
     id: 'pesticides',
     name: 'Pesticides',
@@ -22,8 +18,17 @@ export const HOME_CATEGORIES: HomeCategory[] = [
     image: require('../../assets/images/categories/fungicides.png'),
   },
   {
+    id: 'fertilizers',
+    name: 'Fertilizers',
+    image: require('../../assets/images/categories/fertilizers.png'),
+  },
+  {
     id: 'farming-tools',
     name: 'Farming Tools',
     image: require('../../assets/images/categories/farming-tools.png'),
   },
 ];
+export const HOME_HEADER_DATA = {
+  location: 'Kolar, Karnataka',
+  walletBalance: 500,
+} as const;

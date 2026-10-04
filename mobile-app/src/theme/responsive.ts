@@ -49,21 +49,61 @@ export function useResponsive() {
 
     headerActionSize: isSmall ? 40 : 44,
 
-    searchHeight: isSmall ? 44 : 48,
+    searchFontSize: isSmall ? 12 : 13,
 
-    searchRadius: isSmall ? RADIUS.lg : RADIUS.xl,
+    searchLineHeight: isSmall ? 16 : 18,
+
+    searchHeight: isSmall ? 40 : 42,
+
+    searchRadius: isSmall ? RADIUS.sm : RADIUS.md,
 
     searchHorizontalPadding: isSmall ? SPACING.sm : SPACING.md,
 
-    categoryGap: isSmall ? SPACING.sm : SPACING.md,
+    // Category section
+    categoryGap: isSmall ? 2 : 4,
 
-    categoryImageSize: isSmall ? 64 : 72,
+    categoryImageSize: isSmall ? 66 : 68,
 
-    categoryCardWidth: isSmall ? 76 : 84,
+    categoryImageContainerSize: isSmall ? 76 : 84,
 
-    categoryCardRadius: isSmall ? RADIUS.md : RADIUS.lg,
+    categoryCardWidth: isSmall ? 92 : 104,
+
+    categoryCardRadius: RADIUS.xs,
+
+    categoryFontSize: isSmall ? FONT_SIZE.sm : FONT_SIZE.sm,
+
+    categoryLineHeight: isSmall ? LINE_HEIGHT.sm : LINE_HEIGHT.sm,
 
     sectionSpacing: isSmall ? SPACING.xl : SPACING.xxl,
+    // Crop Advisor banner
+    cropAdvisorMarginTop: SPACING.xs,
+
+    cropAdvisorHeight: ((width - horizontalPadding * 2) * 387) / 606,
+
+    cropAdvisorRadius: RADIUS.lg,
+
+    cropAdvisorTitleSize: isSmall ? FONT_SIZE.md : FONT_SIZE.lg,
+
+    cropAdvisorTitleLineHeight: isSmall ? LINE_HEIGHT.md : LINE_HEIGHT.lg,
+
+    cropAdvisorDescriptionSize: isSmall ? 9 : 10,
+
+    cropAdvisorDescriptionLineHeight: isSmall ? 12 : 14,
+
+    cropAdvisorButtonHeight: isSmall ? 30 : 32,
+
+    cropAdvisorButtonRadius: RADIUS.sm,
+
+    cropAdvisorButtonFontSize: isSmall ? 12 : 13,
+
+    cropAdvisorButtonLineHeight: isSmall ? 16 : 18,
+    walletHeight: isSmall ? 24 : 28,
+    walletWidth: isSmall ? 46 : 50,
+    walletHorizontalPadding: isSmall ? 6 : 8,
+    walletRadius: isSmall ? 4 : 6,
+    walletGap: isSmall ? 2 : 4,
+    walletFontSize: isSmall ? 12 : 13,
+    walletLineHeight: isSmall ? 16 : 18,
   };
 
   return {
