@@ -11,6 +11,8 @@ export const ICONS = {
   chevronLeft: 'chevron-back',
   chevronDown: 'chevron-down',
   chevronUp: 'chevron-up',
+  trash: 'trash-outline',
+  coupon: 'ticket-outline',
 
   home: 'home-outline',
   products: 'grid-outline',
@@ -19,6 +21,12 @@ export const ICONS = {
   profile: 'person-outline',
 
   heart: 'heart-outline',
+  heartFilled: 'heart',
+  share: 'share-social-outline',
+  reviewer: 'person-circle-outline',
+  reviewOptions: 'ellipsis-vertical',
+  helpful: 'thumbs-up-outline',
+  helpfulFilled: 'thumbs-up',
   star: 'star-outline',
   location: 'location-outline',
   notifications: 'notifications-outline',

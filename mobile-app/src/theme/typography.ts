@@ -1,4 +1,5 @@
 export const FONT_FAMILY = {
+  light: 'Manrope_300Light',
   regular: 'Manrope_400Regular',
   medium: 'Manrope_500Medium',
   semiBold: 'Manrope_600SemiBold',
@@ -6,8 +7,40 @@ export const FONT_FAMILY = {
   extraBold: 'Manrope_800ExtraBold',
 } as const;
 
+export const PAYMENT_SUCCESS_TYPOGRAPHY = {
+  title: { fontFamily: FONT_FAMILY.semiBold, fontSize: 20, lineHeight: 24 },
+  body: { fontFamily: FONT_FAMILY.medium, fontSize: 16, lineHeight: 19.2 },
+  price: { fontFamily: FONT_FAMILY.bold, fontSize: 20, lineHeight: 24 },
+  unit: { fontFamily: FONT_FAMILY.medium, fontSize: 16, lineHeight: 24 },
+  location: { fontFamily: FONT_FAMILY.medium, fontSize: 14, lineHeight: 24 },
+  button: { fontFamily: FONT_FAMILY.semiBold, fontSize: 16, lineHeight: 19 },
+} as const;
+
+export const WALLET_TYPOGRAPHY = {
+  amountTitle: { fontFamily: FONT_FAMILY.semiBold, fontSize: 20, lineHeight: 26 },
+  amountInput: { fontFamily: FONT_FAMILY.medium, fontSize: 20, lineHeight: 26 },
+  paymentMethod: { fontFamily: FONT_FAMILY.semiBold, fontSize: 16, lineHeight: 20.8 },
+  proceed: { fontFamily: FONT_FAMILY.bold, fontSize: 20, lineHeight: 24, letterSpacing: 0.1 },
+  howToUseTitle: { fontFamily: FONT_FAMILY.bold, fontSize: 24, lineHeight: 31.2 },
+  howToUseDescription: { fontFamily: FONT_FAMILY.light, fontSize: 10, lineHeight: 10 },
+  gotIt: { fontFamily: FONT_FAMILY.bold, fontSize: 20, lineHeight: 26 },
+  header: { fontFamily: FONT_FAMILY.semiBold, fontSize: 16, lineHeight: 20.8 },
+  balanceTitle: { fontFamily: FONT_FAMILY.semiBold, fontSize: 20, lineHeight: 26 },
+  balance: { fontFamily: FONT_FAMILY.medium, fontSize: 16, lineHeight: 20.8 },
+  addMoney: { fontFamily: FONT_FAMILY.semiBold, fontSize: 12, lineHeight: 15.6 },
+  tab: { fontFamily: FONT_FAMILY.semiBold, fontSize: 16, lineHeight: 20.8 },
+  transactionTitle: { fontFamily: FONT_FAMILY.medium, fontSize: 12, lineHeight: 15.6 },
+  transactionDate: { fontFamily: FONT_FAMILY.medium, fontSize: 10, lineHeight: 13 },
+  transactionAmount: { fontFamily: FONT_FAMILY.semiBold, fontSize: 12, lineHeight: 15.6 },
+  currency: { fontFamily: FONT_FAMILY.medium, fontSize: 18, lineHeight: 23.4 },
+} as const;
+
 export const FONT_SIZE = {
+  micro: 8,
+  xxs: 10,
+  compact: 11,
   xs: 12,
+  detail: 13,
   sm: 14,
   md: 16,
   lg: 18,
@@ -17,6 +50,7 @@ export const FONT_SIZE = {
 } as const;
 
 export const LINE_HEIGHT = {
+  xxs: 13,
   xs: 16,
   sm: 20,
   md: 24,
@@ -24,4 +58,68 @@ export const LINE_HEIGHT = {
   xl: 28,
   xxl: 32,
   xxxl: 40,
+} as const;
+
+export const FONT_WEIGHT = {
+  medium: '500',
+  semiBold: '600',
+  bold: '700',
+} as const;
+
+export const CART_TYPOGRAPHY = {
+  title: { fontFamily: FONT_FAMILY.semiBold, fontSize: 14, lineHeight: 18.2 },
+  body: { fontFamily: FONT_FAMILY.regular, fontSize: 12, lineHeight: 18 },
+  sectionTitle: { fontFamily: FONT_FAMILY.semiBold, fontSize: 12, lineHeight: 15.6 },
+  couponTitle: { fontFamily: FONT_FAMILY.bold, fontSize: 12, lineHeight: 15.6 },
+  couponDescription: { fontFamily: FONT_FAMILY.regular, fontSize: 10, lineHeight: 13 },
+  priceTitle: { fontFamily: FONT_FAMILY.semiBold, fontSize: 14, lineHeight: 18.2 },
+  shipping: { fontFamily: FONT_FAMILY.medium, fontSize: 12, lineHeight: 15.6 },
+  footerLabel: { fontFamily: FONT_FAMILY.medium, fontSize: 14, lineHeight: 18.2 },
+  address: { fontFamily: FONT_FAMILY.medium, fontSize: 10, lineHeight: 13 },
+  addressAction: { fontFamily: FONT_FAMILY.regular, fontSize: 10, lineHeight: 13 },
+  itemName: { fontFamily: FONT_FAMILY.regular, fontSize: 14, lineHeight: 20 },
+  itemPrice: { fontFamily: FONT_FAMILY.semiBold, fontSize: 12, lineHeight: 15.6 },
+  itemMrp: { fontFamily: FONT_FAMILY.regular, fontSize: 8, lineHeight: 12 },
+  itemDiscount: { fontFamily: FONT_FAMILY.semiBold, fontSize: 10, lineHeight: 13 },
+  caption: { fontFamily: FONT_FAMILY.regular, fontSize: 10, lineHeight: 14 },
+  viewMore: { fontFamily: FONT_FAMILY.semiBold, fontSize: 10, lineHeight: 13 },
+  recommendationName: { fontFamily: FONT_FAMILY.medium, fontSize: 10, lineHeight: 13 },
+  recommendationVariant: { fontFamily: FONT_FAMILY.medium, fontSize: 8, lineHeight: 10.4 },
+  recommendationPrice: { fontFamily: FONT_FAMILY.semiBold, fontSize: 8, lineHeight: 10.4 },
+  recommendationMrp: { fontFamily: FONT_FAMILY.regular, fontSize: 5, lineHeight: 8 },
+  recommendationDiscount: { fontFamily: FONT_FAMILY.regular, fontSize: 5, lineHeight: 8 },
+  recommendationButton: { fontFamily: FONT_FAMILY.semiBold, fontSize: 8, lineHeight: 10.4 },
+  continueButton: { fontFamily: FONT_FAMILY.semiBold, fontSize: 14, lineHeight: 18 },
+  quantitySymbol: { fontFamily: FONT_FAMILY.regular, fontSize: 20, lineHeight: 22 },
+  quantity: { fontFamily: FONT_FAMILY.medium, fontSize: 12, lineHeight: 16 },
+  paymentMethod: { fontFamily: FONT_FAMILY.semiBold, fontSize: 14, lineHeight: 18.2 },
+  paymentOffer: { fontFamily: FONT_FAMILY.semiBold, fontSize: 10, lineHeight: 13 },
+} as const;
+
+export const PRODUCT_TYPOGRAPHY = {
+  header: { fontFamily: FONT_FAMILY.semiBold, fontSize: 14, lineHeight: 18.2 },
+  name: { fontFamily: FONT_FAMILY.medium, fontSize: 24, lineHeight: 31.2 },
+  reviews: { fontFamily: FONT_FAMILY.medium, fontSize: 12, lineHeight: 15.6 },
+  price: { fontFamily: FONT_FAMILY.semiBold, fontSize: 16, lineHeight: 20.8 },
+  mrp: { fontFamily: FONT_FAMILY.regular, fontSize: 10, lineHeight: 13 },
+  discount: { fontFamily: FONT_FAMILY.semiBold, fontSize: 10, lineHeight: 13 },
+  pack: { fontFamily: FONT_FAMILY.semiBold, fontSize: 14, lineHeight: 18.2 },
+  section: { fontFamily: FONT_FAMILY.semiBold, fontSize: 16, lineHeight: 20.8 },
+  detailRow: { fontFamily: FONT_FAMILY.medium, fontSize: 14, lineHeight: 18.2 },
+  delivery: { fontFamily: FONT_FAMILY.medium, fontSize: 12, lineHeight: 15.6 },
+  addressName: { fontFamily: FONT_FAMILY.semiBold, fontSize: 12, lineHeight: 15.6 },
+  addressText: { fontFamily: FONT_FAMILY.medium, fontSize: 12, lineHeight: 15.6 },
+  addressAction: { fontFamily: FONT_FAMILY.medium, fontSize: 10, lineHeight: 13 },
+  videoCaption: { fontFamily: FONT_FAMILY.medium, fontSize: 10, lineHeight: 13 },
+  returns: { fontFamily: FONT_FAMILY.semiBold, fontSize: 14, lineHeight: 18.2 },
+  returnsDescription: { fontFamily: FONT_FAMILY.regular, fontSize: 12, lineHeight: 15.6 },
+  smallSection: { fontFamily: FONT_FAMILY.semiBold, fontSize: 12, lineHeight: 15.6 },
+  ratingScore: { fontFamily: FONT_FAMILY.semiBold, fontSize: 28, lineHeight: 36.4 },
+  ratingLabel: { fontFamily: FONT_FAMILY.medium, fontSize: 10, lineHeight: 13 },
+  reviewAuthor: { fontFamily: FONT_FAMILY.semiBold, fontSize: 16, lineHeight: 20.8 },
+  reviewDate: { fontFamily: FONT_FAMILY.semiBold, fontSize: 12, lineHeight: 14.4 },
+  reviewText: { fontFamily: FONT_FAMILY.regular, fontSize: 10, lineHeight: 12 },
+  reviewReply: { fontFamily: FONT_FAMILY.semiBold, fontSize: 16, lineHeight: 19.2 },
+  faq: { fontFamily: FONT_FAMILY.medium, fontSize: 12, lineHeight: 15.6 },
+  faqTitle: { fontFamily: FONT_FAMILY.semiBold, fontSize: 16, lineHeight: 19.2 },
 } as const;
