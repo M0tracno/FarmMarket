@@ -1,3 +1,5 @@
+import type { ImageSourcePropType } from 'react-native';
+
 export const ICONS = {
   back: 'arrow-back',
   forward: 'arrow-forward',
@@ -17,13 +19,15 @@ export const ICONS = {
   cart: 'cart-outline',
   orders: 'receipt-outline',
   profile: 'person-outline',
-
   heart: 'heart-outline',
   star: 'star-outline',
   location: 'location-outline',
   notifications: 'notifications-outline',
+  wallet: 'wallet-outline',
+  microphone: 'mic-outline',
+  scan: 'scan-outline',
+  wishlist: 'heart-outline',
   settings: 'settings-outline',
-
   eye: 'eye-outline',
   eyeOff: 'eye-off-outline',
   calendar: 'calendar-outline',
@@ -31,5 +35,18 @@ export const ICONS = {
   refresh: 'refresh',
   help: 'help-circle-outline',
 } as const;
+
+export const CUSTOM_ICONS: Partial<
+  Record<keyof typeof ICONS, ImageSourcePropType>
+> = {
+  cart: require('../../assets/icons/cart.png'),
+  location: require('../../assets/icons/location.png'),
+  notifications: require('../../assets/icons/notification.png'),
+  wallet: require('../../assets/icons/wallet.png'),
+  scan: require('../../assets/icons/scan.png'),
+  search: require('../../assets/icons/search.png'),
+  microphone: require('../../assets/icons/microphone.png'),
+  wishlist: require('../../assets/icons/wishlist.png'),
+};
 
 export type IconName = keyof typeof ICONS;
