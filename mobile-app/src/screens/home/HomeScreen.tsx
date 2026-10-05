@@ -1,11 +1,12 @@
 import React, { useState } from 'react';
 import { SafeAreaView, ScrollView, StyleSheet } from 'react-native';
-
+import { MOCK_RECOMMENDATION_PRODUCTS } from '@/data/mockProducts';
 import {
   CategorySection,
   CropAdvisorBanner,
   HomeHeader,
   HomeSearchBar,
+  ProductSection,
 } from '@/components';
 
 import {
@@ -49,6 +50,42 @@ export function HomeScreen() {
           title="Top Companies"
           categories={HOME_TOP_COMPANIES}
           marginTop={-70}
+        />
+        <ProductSection
+          title="Recommended for you"
+          products={MOCK_RECOMMENDATION_PRODUCTS}
+          onAddToCart={(product) => {
+            // connect to CartContext here
+          }}
+        />
+
+        <ProductSection
+          title="Seeds Section"
+          products={MOCK_RECOMMENDATION_PRODUCTS}
+          onAddToCart={(product) => {
+            // connect to CartContext here
+          }}
+        />
+        <ProductSection
+          title="Fertilizers"
+          products={MOCK_RECOMMENDATION_PRODUCTS}
+          onAddToCart={(product) => {
+            // connect to CartContext here
+          }}
+        />
+        <ProductSection
+          title="Pesticides"
+          products={MOCK_RECOMMENDATION_PRODUCTS}
+          onAddToCart={(product) => {
+            // connect to CartContext here
+          }}
+        />
+        <ProductSection
+          title="Equipment and Tools"
+          products={MOCK_RECOMMENDATION_PRODUCTS}
+          onAddToCart={(product) => {
+            // connect to CartContext here
+          }}
         />
       </ScrollView>
     </SafeAreaView>
