@@ -27,6 +27,7 @@ export const COLORS = {
   productVideo: '#D9D9D9',
   reviewGreen: '#0C7810',
 
+  categoryBackground: '#E9EBF8',
   text: {
     primary: '#1A1A1A',
     black: '#000000',
@@ -42,12 +43,13 @@ export const COLORS = {
   border: '#E5E5E5',
   cardBorder: '#D9D9D9',
   originalPrice: '#BEBEBE',
+  border: '#A491BF',
   divider: '#EEEEEE',
 
   success: '#009411',
   warning: '#F59E0B',
   error: '#D32F2F',
-  info: '#2563EB',
+  info: '#6A00FF',
 
   disabled: '#D9D9D9',
 

@@ -1,18 +1,18 @@
 #!/bin/sh
 
-cd mobile-app
+REPO_ROOT="$(git rev-parse --show-toplevel)"
+cd "$REPO_ROOT/mobile-app" || exit 1
+
+pnpm exec lint-staged
+if [ $? -ne 0 ]; then
+  echo "lint-staged failed. Commit blocked."
+  exit 1
+fi
 
 echo "Running TypeScript check..."
 pnpm typecheck
 if [ $? -ne 0 ]; then
   echo "TypeScript check failed. Commit blocked."
-  exit 1
-fi
-
-echo "Running ESLint..."
-pnpm exec eslint .
-if [ $? -ne 0 ]; then
-  echo "ESLint check failed. Commit blocked."
   exit 1
 fi
 
