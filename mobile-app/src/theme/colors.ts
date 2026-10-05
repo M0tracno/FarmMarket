@@ -43,7 +43,7 @@ export const COLORS = {
   border: '#E5E5E5',
   cardBorder: '#D9D9D9',
   originalPrice: '#BEBEBE',
-  border: '#A491BF',
+  categoryborder: '#A491BF',
   divider: '#EEEEEE',
 
   success: '#009411',
