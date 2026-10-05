@@ -3,7 +3,8 @@ import { Image, Pressable, StyleSheet, View } from 'react-native';
 
 import { AppText } from '@/components/common/AppText';
 import { AppIcon } from '@/components/common/AppIcon';
-import { COLORS, RADIUS, SPACING } from '@/theme';
+import { APP_CONFIG, CATEGORY_STRINGS } from '@/constants/categoryStrings';
+import { COLORS, FONT_SIZE, RADIUS, SPACING } from '@/theme';
 import type { ProductItem } from '@/types/product';
 
 interface ProductCardProps {
@@ -52,7 +53,7 @@ export function ProductCard({ product, onPress, onAddToCart }: ProductCardProps)
 
           <View style={styles.priceRow}>
             <AppText variant="caption" style={styles.price}>
-              ₹ {priceRupees}
+              {APP_CONFIG.currencySymbol} {priceRupees}
             </AppText>
 
             <AppText
@@ -60,11 +61,11 @@ export function ProductCard({ product, onPress, onAddToCart }: ProductCardProps)
               color={COLORS.text.muted}
               style={styles.originalPrice}
             >
-              ₹{originalPriceRupees}
+              {APP_CONFIG.currencySymbol}{originalPriceRupees}
             </AppText>
 
             <AppText variant="caption" style={styles.discount}>
-              {product.discountPercentage}% off
+              {product.discountPercentage}{CATEGORY_STRINGS.discountSuffix}
             </AppText>
           </View>
         </View>
@@ -72,13 +73,13 @@ export function ProductCard({ product, onPress, onAddToCart }: ProductCardProps)
 
       <Pressable
         accessibilityRole="button"
-        accessibilityLabel={`Add ${product.name} to cart`}
+        accessibilityLabel={`${CATEGORY_STRINGS.addToCart} ${product.name}`}
         onPress={() => onAddToCart?.(product)}
         style={styles.addButton}
       >
         <AppIcon name="cart" size="sm" color={COLORS.purple} />
         <AppText variant="caption" style={styles.addButtonText}>
-          Add To Card
+          {CATEGORY_STRINGS.addToCart}
         </AppText>
       </Pressable>
     </View>
@@ -95,10 +96,10 @@ const styles = StyleSheet.create({
     padding: SPACING.sm,
     justifyContent: 'space-between',
     elevation: 1,
-    shadowColor: '#000',
+    shadowColor: COLORS.shadow,
     shadowOffset: { width: 0, height: 1 },
     shadowOpacity: 0.05,
-    shadowRadius: 2,
+    shadowRadius: RADIUS.xxs,
   },
   clickableArea: {
     flex: 1,
@@ -106,7 +107,7 @@ const styles = StyleSheet.create({
   imageContainer: {
     width: '100%',
     height: 120,
-    backgroundColor: '#FAFAFA',
+    backgroundColor: COLORS.surfaceLight,
     borderRadius: RADIUS.md,
     alignItems: 'center',
     justifyContent: 'center',
@@ -124,14 +125,14 @@ const styles = StyleSheet.create({
     marginTop: SPACING.xs,
   },
   specs: {
-    fontSize: 11,
-    marginTop: 2,
+    fontSize: FONT_SIZE.xxs + 1,
+    marginTop: SPACING.xxs,
   },
   priceRow: {
     flexDirection: 'row',
     alignItems: 'center',
     flexWrap: 'wrap',
-    gap: 4,
+    gap: SPACING.xs,
     marginTop: SPACING.xs,
   },
   price: {
@@ -139,11 +140,11 @@ const styles = StyleSheet.create({
     color: COLORS.purple,
   },
   originalPrice: {
-    fontSize: 10,
+    fontSize: FONT_SIZE.xxs,
     textDecorationLine: 'line-through',
   },
   discount: {
-    fontSize: 10,
+    fontSize: FONT_SIZE.xxs,
     color: COLORS.purple,
     fontWeight: '600',
   },
@@ -155,13 +156,13 @@ const styles = StyleSheet.create({
     borderWidth: 1,
     borderColor: COLORS.purple,
     borderRadius: RADIUS.md,
-    paddingVertical: 6,
+    paddingVertical: SPACING.sm - 2,
     marginTop: SPACING.sm,
     backgroundColor: COLORS.purpleLight,
   },
   addButtonText: {
     color: COLORS.purple,
     fontWeight: '600',
-    fontSize: 12,
+    fontSize: FONT_SIZE.xs,
   },
 });

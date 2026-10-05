@@ -7,6 +7,7 @@ import {
   HomeSearchBar,
   ProductCard,
 } from '@/components';
+import { APP_CONFIG, CATEGORY_STRINGS } from '@/constants/categoryStrings';
 import {
   FERTILIZER_BANNER,
   FERTILIZER_PRODUCTS,
@@ -41,7 +42,7 @@ export function FertilizerCategoryScreen() {
         ListHeaderComponent={
           <View style={styles.headerArea}>
             <HomeHeader
-              location="Kolar, Karnataka"
+              location={APP_CONFIG.defaultLocation}
               onNotificationPress={() => {}}
               onProfilePress={() => {}}
             />
@@ -49,7 +50,7 @@ export function FertilizerCategoryScreen() {
             <HomeSearchBar
               value={searchQuery}
               onChangeText={setSearchQuery}
-              placeholder="Search seeds, fertilizers, equipment..."
+              placeholder={CATEGORY_STRINGS.searchPlaceholder}
               onVoicePress={() => {}}
               onScanPress={() => {}}
             />

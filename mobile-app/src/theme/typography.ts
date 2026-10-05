@@ -7,6 +7,7 @@ export const FONT_FAMILY = {
 } as const;
 
 export const FONT_SIZE = {
+  xxs: 10,
   xs: 12,
   sm: 14,
   md: 16,
@@ -17,6 +18,7 @@ export const FONT_SIZE = {
 } as const;
 
 export const LINE_HEIGHT = {
+  xxs: 14,
   xs: 16,
   sm: 20,
   md: 24,
