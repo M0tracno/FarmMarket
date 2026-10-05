@@ -5,6 +5,9 @@ export const COLORS = {
   primary: '#8B5E3C',
   secondary: '#A67C52',
   orange: '#C47A44',
+  purple: '#6B21A8',
+  purpleLight: '#FAF5FF',
+  purpleBorder: '#C084FC',
 
   text: {
     primary: '#1A1A1A',
