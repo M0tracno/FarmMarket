@@ -16,6 +16,7 @@ interface CategorySectionProps {
   categories: HomeCategory[];
   onCategoryPress?: (category: HomeCategory) => void;
   onViewAllPress?: () => void;
+  marginTop?: number;
 }
 
 export function CategorySection({
@@ -23,11 +24,19 @@ export function CategorySection({
   categories,
   onCategoryPress,
   onViewAllPress,
+  marginTop = SPACING.xxl,
 }: CategorySectionProps) {
   const { home } = useResponsive();
 
   return (
-    <View style={styles.container}>
+    <View
+      style={[
+        styles.container,
+        {
+          marginTop,
+        },
+      ]}
+    >
       {/* Section Header */}
       <View style={styles.header}>
         <AppText
@@ -131,9 +140,7 @@ export function CategorySection({
 }
 
 const styles = StyleSheet.create({
-  container: {
-    marginTop: SPACING.xxl,
-  },
+  container: {},
 
   header: {
     flexDirection: 'row',

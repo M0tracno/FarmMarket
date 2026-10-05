@@ -8,7 +8,11 @@ import {
   HomeSearchBar,
 } from '@/components';
 
-import { HOME_CATEGORIES, HOME_HEADER_DATA } from '@/constants/home';
+import {
+  HOME_CATEGORIES,
+  HOME_HEADER_DATA,
+  HOME_TOP_COMPANIES,
+} from '@/constants/home';
 import { COLORS, SPACING } from '@/theme';
 
 export function HomeScreen() {
@@ -40,8 +44,12 @@ export function HomeScreen() {
           title="Shop by Category"
           categories={HOME_CATEGORIES}
         />
-
         <CropAdvisorBanner />
+        <CategorySection
+          title="Top Companies"
+          categories={HOME_TOP_COMPANIES}
+          marginTop={-70}
+        />
       </ScrollView>
     </SafeAreaView>
   );
