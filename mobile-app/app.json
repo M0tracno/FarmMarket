@@ -5,18 +5,12 @@
     "version": "1.0.0",
     "orientation": "portrait",
     "userInterfaceStyle": "light",
-    "platforms": [
-      "android",
-      "ios",
-      "web"
-    ],
-    "assetBundlePatterns": [
-      "**/*"
-    ],
-    "plugins": [
-      "expo-router",
-      "expo-font",
-      "expo-splash-screen"
-    ]
+    "platforms": ["android", "ios", "web"],
+    "web": {
+      "bundler": "metro",
+      "output": "single"
+    },
+    "assetBundlePatterns": ["**/*"],
+    "plugins": ["expo-router", "expo-font", "expo-splash-screen"]
   }
 }
