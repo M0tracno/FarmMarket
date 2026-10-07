@@ -6,7 +6,14 @@ import { CART_COPY, type CartCopy } from '@/constants/config';
 
 import { ICONS } from '@/constants/icons';
 import { AppText } from '@/components/common/AppText';
-import { CART_LAYOUT, CART_TYPOGRAPHY, COLORS, RADIUS, SIZES, UI } from '@/theme';
+import {
+  CART_LAYOUT,
+  CART_TYPOGRAPHY,
+  COLORS,
+  RADIUS,
+  SIZES,
+  UI,
+} from '@/theme';
 import { type Product } from '@/types';
 import { getProductDiscountPercent, formatPaise } from '@/utils/price';
 
@@ -24,11 +31,20 @@ export function ProductRecommendationCard({
   onProductPress,
 }: ProductRecommendationCardProps) {
   const hasDiscount = product.mrpPaise > product.pricePaise;
-  const imageSource = typeof product.imageUrl === 'string' ? { uri: product.imageUrl } : product.imageUrl;
+  const imageSource =
+    typeof product.imageUrl === 'string'
+      ? { uri: product.imageUrl }
+      : product.imageUrl;
 
   return (
     <View style={styles.container}>
-      <Pressable style={styles.imageContainer} onPress={() => onProductPress?.(product)} disabled={!onProductPress} accessibilityRole="button" accessibilityLabel={product.name}>
+      <Pressable
+        style={styles.imageContainer}
+        onPress={() => onProductPress?.(product)}
+        disabled={!onProductPress}
+        accessibilityRole="button"
+        accessibilityLabel={product.name}
+      >
         <Image
           source={imageSource}
           style={styles.image}
@@ -42,9 +58,7 @@ export function ProductRecommendationCard({
           {product.name}
         </AppText>
 
-        <AppText style={styles.variantText}>
-          {product.variant}
-        </AppText>
+        <AppText style={styles.variantText}>{product.variant}</AppText>
 
         <View style={styles.priceRow}>
           <AppText style={styles.priceText}>
@@ -69,7 +83,12 @@ export function ProductRecommendationCard({
         accessibilityRole="button"
         accessibilityLabel={copy.addProduct(product.name)}
       >
-        <Ionicons name={ICONS.cart} size={SIZES.recommendationIconWidth} color={COLORS.purple} style={styles.cartIcon} />
+        <Ionicons
+          name={ICONS.cart}
+          size={SIZES.recommendationIconWidth}
+          color={COLORS.purple}
+          style={styles.cartIcon}
+        />
         <AppText style={styles.buttonText} numberOfLines={1}>
           {copy.addToCart}
         </AppText>
@@ -101,7 +120,10 @@ const styles = StyleSheet.create({
     gap: CART_LAYOUT.cardPadding,
     paddingTop: UI.tightGap,
   },
-  productTitle: { ...CART_TYPOGRAPHY.recommendationName, color: COLORS.text.black },
+  productTitle: {
+    ...CART_TYPOGRAPHY.recommendationName,
+    color: COLORS.text.black,
+  },
   variantText: {
     ...CART_TYPOGRAPHY.recommendationVariant,
     color: COLORS.text.dark,

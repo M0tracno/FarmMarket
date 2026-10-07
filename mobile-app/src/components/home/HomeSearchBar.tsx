@@ -99,7 +99,7 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     alignItems: 'center',
     borderWidth: 1,
-    borderColor: COLORS.border,
+    borderColor: COLORS.categoryborder,
     backgroundColor: COLORS.surface,
   },
 
