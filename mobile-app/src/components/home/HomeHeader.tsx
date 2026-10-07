@@ -6,20 +6,22 @@ import { COLORS, useResponsive } from '@/theme';
 
 interface HomeHeaderProps {
   location: string;
-  walletBalance: number;
+  walletBalance?: number;
   onLocationPress?: () => void;
   onNotificationPress?: () => void;
   onWalletPress?: () => void;
   onCartPress?: () => void;
+  onProfilePress?: () => void;
 }
 
 export function HomeHeader({
   location,
-  walletBalance,
+  walletBalance = 0,
   onLocationPress,
   onNotificationPress,
   onWalletPress,
   onCartPress,
+  onProfilePress,
 }: HomeHeaderProps) {
   const { home } = useResponsive();
 

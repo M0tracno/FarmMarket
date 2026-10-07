@@ -1,7 +1,9 @@
 import React, { useState } from 'react';
 import { SafeAreaView, ScrollView, StyleSheet } from 'react-native';
 import { useRouter } from 'expo-router';
+
 import { MOCK_RECOMMENDATION_PRODUCTS } from '@/data/mockProducts';
+
 import {
   CategorySection,
   CropAdvisorBanner,
@@ -15,6 +17,7 @@ import {
   HOME_HEADER_DATA,
   HOME_TOP_COMPANIES,
 } from '@/constants/home';
+
 import { COLORS, SPACING } from '@/theme';
 
 export function HomeScreen() {
@@ -56,13 +59,17 @@ export function HomeScreen() {
             } else if (category.id === 'seeds') {
               router.push('/category/seeds');
             }
+          }}
         />
+
         <CropAdvisorBanner />
+
         <CategorySection
           title="Top Companies"
           categories={HOME_TOP_COMPANIES}
           marginTop={-70}
         />
+
         <ProductSection
           title="Recommended for you"
           products={MOCK_RECOMMENDATION_PRODUCTS}
@@ -78,6 +85,7 @@ export function HomeScreen() {
             // connect to CartContext here
           }}
         />
+
         <ProductSection
           title="Fertilizers"
           products={MOCK_RECOMMENDATION_PRODUCTS}
@@ -85,6 +93,7 @@ export function HomeScreen() {
             // connect to CartContext here
           }}
         />
+
         <ProductSection
           title="Pesticides"
           products={MOCK_RECOMMENDATION_PRODUCTS}
@@ -92,6 +101,7 @@ export function HomeScreen() {
             // connect to CartContext here
           }}
         />
+
         <ProductSection
           title="Equipment and Tools"
           products={MOCK_RECOMMENDATION_PRODUCTS}
