@@ -28,6 +28,33 @@ export const HOME_CATEGORIES: HomeCategory[] = [
     image: require('../../assets/images/categories/farming-tools.png'),
   },
 ];
+export const HOME_TOP_COMPANIES: HomeCategory[] = [
+  {
+    id: 'bayer',
+    name: 'Bayer',
+    image: require('../../assets/images/companies/Bayer.png'),
+  },
+  {
+    id: 'coromandel',
+    name: 'Coromandel',
+    image: require('../../assets/images/companies/Coromandel.png'),
+  },
+  {
+    id: 'upl',
+    name: 'UPL',
+    image: require('../../assets/images/companies/UPL.png'),
+  },
+  {
+    id: 'syngenta',
+    name: 'Syngenta',
+    image: require('../../assets/images/companies/Syngenta.png'),
+  },
+  {
+    id: 'rallis',
+    name: 'Rallis',
+    image: require('../../assets/images/companies/Rallis.png'),
+  },
+];
 export const HOME_HEADER_DATA = {
   location: 'Kolar, Karnataka',
   walletBalance: 500,

@@ -96,9 +96,12 @@ const styles = StyleSheet.create({
     position: 'relative',
     overflow: 'hidden',
   },
+
   image: {
     width: '100%',
-    height: '78%',
+    height: '100%',
+    position: 'absolute',
+    top: -40,
   },
 
   content: {
@@ -111,7 +114,7 @@ const styles = StyleSheet.create({
   title: {
     color: COLORS.text.primary,
     fontWeight: '600',
-    marginTop: SPACING.xl,
+    marginTop: SPACING.sm,
   },
 
   description: {
