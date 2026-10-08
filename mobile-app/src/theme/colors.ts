@@ -1,10 +1,15 @@
 export const COLORS = {
   background: '#FFFFFF',
   surface: '#FFFFFF',
+  surfaceLight: '#FAFAFA',
+  shadow: '#000000',
 
   primary: '#8B5E3C',
   secondary: '#A67C52',
   orange: '#C47A44',
+  purple: '#6B21A8',
+  purpleLight: '#FAF5FF',
+  purpleBorder: '#C084FC',
 
   purple: '#6A00FF',
   purpleSurface: '#FAF6FF',

@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { SafeAreaView, ScrollView, StyleSheet } from 'react-native';
+import { useRouter } from 'expo-router';
 import { MOCK_RECOMMENDATION_PRODUCTS } from '@/data/mockProducts';
 import {
   CategorySection,
@@ -17,6 +18,7 @@ import {
 import { COLORS, SPACING } from '@/theme';
 
 export function HomeScreen() {
+  const router = useRouter();
   const [searchQuery, setSearchQuery] = useState('');
 
   return (
@@ -44,6 +46,16 @@ export function HomeScreen() {
         <CategorySection
           title="Shop by Category"
           categories={HOME_CATEGORIES}
+          onCategoryPress={(category) => {
+            if (category.id === 'farming-tools') {
+              router.push('/category/equipments');
+            } else if (category.id === 'pesticides') {
+              router.push('/category/pesticides');
+            } else if (category.id === 'fertilizers') {
+              router.push('/category/fertilizers');
+            } else if (category.id === 'seeds') {
+              router.push('/category/seeds');
+            }
         />
         <CropAdvisorBanner />
         <CategorySection

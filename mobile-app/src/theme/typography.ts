@@ -50,7 +50,7 @@ export const FONT_SIZE = {
 } as const;
 
 export const LINE_HEIGHT = {
-  xxs: 13,
+  xxs: 14,
   xs: 16,
   sm: 20,
   md: 24,

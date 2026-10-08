@@ -31,7 +31,7 @@
     "babel-preset-expo": "~57.0.12",
     "expo": "^57.0.24",
     "expo-font": "~57.0.4",
-    "expo-image-picker": "~57.0.20",
+    "expo-image-picker": "^57.0.20",
     "expo-router": "~57.0.22",
     "expo-splash-screen": "~57.0.9",
     "react": "19.2.3",
