@@ -32,7 +32,6 @@ export default function RootLayout() {
     }
   }, [fontsLoaded]);
 
-  return <Stack screenOptions={{ headerShown: false }} />;
   if (!fontsLoaded) {
     return null;
   }

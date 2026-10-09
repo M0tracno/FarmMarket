@@ -1,10 +1,5 @@
 import React, { useState } from 'react';
-import {
-  FlatList,
-  SafeAreaView,
-  StyleSheet,
-  View,
-} from 'react-native';
+import { FlatList, SafeAreaView, StyleSheet, View } from 'react-native';
 
 import {
   CategoryHeroBanner,
@@ -13,19 +8,15 @@ import {
   ProductCard,
 } from '@/components';
 import { APP_CONFIG, CATEGORY_STRINGS } from '@/constants/categoryStrings';
-import {
-  EQUIPMENT_BANNER,
-  EQUIPMENT_PRODUCTS,
-} from '@/constants/equipment';
-import { COLORS, SPACING, useResponsive } from '@/theme';
+import { EQUIPMENT_BANNER, EQUIPMENT_PRODUCTS } from '@/constants/equipment';
+import { COLORS, SPACING } from '@/theme';
 import type { ProductItem } from '@/types/product';
 
 export function EquipmentCategoryScreen() {
   const [searchQuery, setSearchQuery] = useState('');
-  const { isSmall } = useResponsive();
 
   const filteredProducts = EQUIPMENT_PRODUCTS.filter((product) =>
-    product.name.toLowerCase().includes(searchQuery.toLowerCase())
+    product.name.toLowerCase().includes(searchQuery.toLowerCase()),
   );
 
   const handleProductPress = (product: ProductItem) => {
