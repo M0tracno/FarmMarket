@@ -56,8 +56,12 @@ export function HomeScreen() {
             } else if (category.id === 'seeds') {
               router.push('/category/seeds');
             }
+          }}
         />
-        <CropAdvisorBanner />
+
+        <CropAdvisorBanner
+          onPress={() => router.push('/(main)/crop-advisor')}
+        />
         <CategorySection
           title="Top Companies"
           categories={HOME_TOP_COMPANIES}

@@ -17,7 +17,19 @@ export default function MainLayout() {
       }}
     >
       <Tabs.Screen name="home" options={{ title: 'Home' }} />
-      <Tabs.Screen name="advisor" options={{ title: 'Advisor' }} />
+      <Tabs.Screen
+          name="crop-advisor"
+            options={{
+              title: 'Advisor', 
+              tabBarStyle: {display: 'none',},
+            }}
+      />
+      <Tabs.Screen 
+            name="advisor"
+            options={{
+              href: null,
+            }}
+      />
       <Tabs.Screen
         name="orders"
         options={{
